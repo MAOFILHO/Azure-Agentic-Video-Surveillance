@@ -5,7 +5,7 @@ Notes on project status and standing rules, kept alongside the code for referenc
 ## Repo locations
 
 - Standalone testing repo: `/Users/marco/Documents/Training/K21/Temp/Azure/ComputerVision/Azure-RealTime-Surveillance` (local folder name never renamed), remote `https://github.com/MAOFILHO/Azure-RealTime-Video-Surveillance.git`.
-- Portfolio repo (this one): `/Users/marco/Documents/Training/K21/Real-world/Azure-RealTime-Video-Surveillance`, part of monorepo `Portfolio-Projects` (remote `git@github.com:MAOFILHO/Portfolio-Projects.git`). Root-level GitHub Actions workflows live at the monorepo root: `.github/workflows/azure-realtime-video-surveillance-{ci,deploy}.yml`, scoped to this folder via `paths:`/`working-directory`.
+- This repo (standalone since 2026-10-21): `https://github.com/MAOFILHO/Azure-Agentic-Video-Surveillance`, extracted from the `Portfolio-Projects` monorepo. Workflows are in `.github/workflows/{ci,deploy}.yml` at the repo root (the old monorepo-root `azure-realtime-video-surveillance-{ci,deploy}.yml` no longer apply).
 - CLI in the standalone repo: `.venv/bin/surveil-deploy` (not on PATH — invoke via full path, or `source .venv/bin/activate` within the same shell invocation).
 
 ## Current status (as of 2026-07-28)

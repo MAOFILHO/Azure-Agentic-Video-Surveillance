@@ -6,7 +6,7 @@ This file provides guidance to Claude Code when working in this repository.
 
 An end-to-end Azure video surveillance pipeline: browser/webcam or Nest camera frames get captured, uploaded to Blob Storage, analyzed by Azure AI Vision via an Event Grid-triggered Function, and fanned out as live alerts (dashboard WebSocket + email/SMS via Azure Communication Services). Infra is deployed via a custom Python CLI (`surveil-deploy`) wrapping plain Azure CLI/Bicep — not azd.
 
-This repo is part of the `Portfolio-Projects` monorepo (this folder is one project within it). GitHub Actions workflows for this project live at the **monorepo root** (`../.github/workflows/azure-realtime-video-surveillance-{ci,deploy}.yml`), scoped to this folder via `paths:`/`working-directory` — they are not inside this folder.
+GitHub Actions workflows live in `.github/workflows/` (`ci.yml` for lint/tests/Bicep/frontend build, `deploy.yml` for the manual-only Azure deploy). This project was extracted from the `Portfolio-Projects` monorepo; history before the extraction only covers the `Azure-Agentic-Video-Surveillance` folder.
 
 ## Layout
 
